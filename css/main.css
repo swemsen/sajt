@@ -287,16 +287,14 @@ textarea {
     .content {
         width: 700px;
     }
-    body {
+    html,body {
         font-size: 1em;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     
-    
-    #main-container {
-        display: flex;
-        flex-direction: column;
-    }
-    header, main, article, section, p {
+    header, main,  section {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -309,40 +307,63 @@ textarea {
         min-height: 75px;
 
     }
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-content:center;
+        justify-content: center;
+    }
 
+    header nav ul li {
+        color: white;
+        font-size: 115%;
+        height; 50px;
+        width: auto;
+        border-bottom: 2px solid white;
+        margin: 5px;
+    }
+    header nav ul li:hover, header nav ul li:active {
+        color: #add8e6;
+        border-bottom: 2px solid #add8e6;
+    }
     main {
         min-height: 500px;
-        background-color: rgb(220,220,220, 0.8) ;
+        background-color: rgb(220,220,220, 0.2) ;
     
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
     }
-    #fucker {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
     article {
-        width: 300px;
-        margin: 5px;
+        width: 700px;
+        margin: auto;
         text-align: center;
     }
 
-    .main_pic {
+    article figure {
+        display:inline-block;
+        float:left;
+   }
+    figure img {
+        height: auto;
+        width: 200px;
+ 
+    }
+
+   .main_pic {
         height:auto;
         width: 100%;
     }
     footer {
         color: white;
-        padding: 10px 5px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        
+        padding-bottom: 20px;    
+        padding-top: 20px;    
     }
     footer ul {
         padding: 0;
